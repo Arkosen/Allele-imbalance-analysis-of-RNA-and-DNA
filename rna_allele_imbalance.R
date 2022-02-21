@@ -13,10 +13,6 @@ cnt <- read.csv(filename.count)
 # filter sites with more than 2 read mapping to error allele
 cnt<- subset(cnt, errors <= 2)
 
-head(cnt)
-
-nrow(cnt)
-
 # optimize dispersion and error
 mtmp <- function(par, x, n, ge){
   
@@ -112,8 +108,6 @@ ll.fun <- function(par, x, n, ge, err, d) {
 
 # get genes
 genes= cnt$gene_id %>% unique %>% as.character
-
-head(genes)
 
 # function to run allele imbalance measurements
 fun = function(i){

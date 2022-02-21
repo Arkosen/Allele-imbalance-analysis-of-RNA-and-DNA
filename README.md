@@ -51,7 +51,7 @@ R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running
 
 Example of the expected output is provided in the Github.
 
-
+Extras : To learn how to run command line utilities for R (https://support.rstudio.com/hc/en-us/articles/218012917-How-to-run-R-scripts-from-the-command-line).
 
 
 

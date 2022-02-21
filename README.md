@@ -41,7 +41,7 @@ R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running
 
 ~/Rscript --vanilla ~/dna_allele_imbalance.R dna_allele_count_normal.tsv dna_test_regions.bed normal.csv
 
-Run dna_allele_imbalance.R script seperately for tumor and normal DNA-seq data. Example of dna_allele_count_tumor.tsv, dna_allele_count_normal.tsv, dna_test_region.bed, tumor.csv and normal.csv are provided in this Github. Once the results files (tumor.csv and normal.csv) are obtained run the segmentation.R to perform circular binary segmentation (CBS).
+Run dna_allele_imbalance.R script seperately for tumor and normal DNA-seq data. Example of dna_allele_count_tumor.tsv, dna_allele_count_normal.tsv, dna_test_region.bed, tumor.csv and normal.csv are provided in this Github. With the results file (tumor.csv and normal.csv) run the segmentation.R to perform circular binary segmentation (CBS).
 
 # For running segmentation.R:
 

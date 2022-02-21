@@ -1,8 +1,7 @@
 args = commandArgs(trailingOnly = TRUE)
 filename.tumor= args[1]
 filename.normal= args[2]
-filename.output1= args[3]
-filename.output2= args[4]
+filename.output= args[3]
 
 # load libraries
 suppressMessages(library(data.table))
@@ -24,8 +23,6 @@ colnames(df)[5:8]= c("a_tumor", "nsites_tumor", "a_normal", "nsites_normal")
 
 # difference
 df$delta_a= abs(df$a_tumor)- abs(df$a_normal)
-
-write.csv(df, filename.output1)
 
 # chr
 chr= seq(1,22, by=1)
@@ -63,7 +60,7 @@ my.list= llply(1:length(chr), my.seg.fun, .progress = progress_text(char="+"))
 seg= rbindlist(my.list) %>% as.data.frame()
 
 # output results
-write.csv(seg, filename.output2, row.names = F)
+write.csv(seg, filename.output, row.names = F)
 
 
 

@@ -29,7 +29,7 @@ seqnames,start,end,ref,alt,snp_id,gene_id,ref.matches,alt.matches,N,errors,GQ,ge
 
 # Expected output is a Comma seperated file with following columns:
 
-gene_id,pval,a,fdr;
+gene_id,pval,a,fdr
 ENSG00000188157.14_4,3.55E-11,0.499933893,1.88E-07
 ENSG00000034152.18_3,6.60E-10,0.499933893,1.75E-06
 ENSG00000162591.15_2,6.24E-08,0.499933893,0.00011016

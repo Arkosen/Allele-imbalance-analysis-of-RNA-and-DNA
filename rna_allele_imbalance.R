@@ -146,16 +146,16 @@ fun = function(i){
 
 my.list= llply(1:length(genes), fun, .progress = progress_text(char= "+"))
 
-# combine
+# combine list
 res= do.call(rbind, my.list)
 
 # correct p-values
 res$fdr= p.adjust(res$pval, "fdr")
 
-# order
+# order 
 res= res[order(res$pval),]
 
-# export csv
+# output results
 write.csv(res, filename.output, row.names = F)
 
 

@@ -11,3 +11,16 @@ We filtered RNA-seq reads for mapping bias and obtained allele specific read cou
 
 Modelling read count data.
 To estimate ASE in these samples, we implemented a statistical model that utilizes allele-specific read counts at heterozygous sites mapping to exons of genes, while accounting for genotyping errors, sequencing errors and overdispersion of RNA-seq read counts. This model estimates allele imbalance (aRNA) for each gene, which is how far the reference allele proportion differs from the expected value of 0.5. For more details on modelling read counts please refer to Sen et al, 2022, Cancer Research (DOI: https://doi.org/10.1158/0008-5472.CAN-21-0810) and Sen et al, 2022, Genome Biology (DOI:pending)
+
+Instructions.
+Session Information:
+R version 4.1.2 (2021-11-01)
+Platform: x86_64-conda-linux-gnu (64-bit)
+Running under: CentOS Linux 7 (Core)
+Dependencies : rmutil_1.1.5, dplyr_1.0.7, plyr_1.8.6, data.table_1.14.2
+
+
+
+
+
+

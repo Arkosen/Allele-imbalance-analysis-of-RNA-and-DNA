@@ -22,14 +22,14 @@ R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running
 
 # Format of allele_count.csv input file for estimating RNA allele imbalance. Requires a comma seperated file with following columns. Column names MUST be included:
 
-seqnames,start,end,ref,alt,snp_id,gene_id,ref.matches,alt.matches,N,errors,GQ,genotype.error
+seqnames,start,end,ref,alt,snp_id,gene_id,ref.matches,alt.matches,N,errors,GQ,genotype.error;
 1,889188,889188,G,T,1:889188_G/T,ENSG00000188976.10_2,88,0,88,0,69,1.26E-07
 1,976242,976242,C,A,1:976242_C/A,ENSG00000188157.14_4,15,0,15,0,25,0.003162278
 1,983546,983546,G,T,1:983546_G/T,ENSG00000188157.14_4,51,0,51,0,69,1.26E-07
 
 # Expected output is a Comma seperated file with following columns:
 
-gene_id,pval,a,fdr
+gene_id,pval,a,fdr;
 ENSG00000188157.14_4,3.55E-11,0.499933893,1.88E-07
 ENSG00000034152.18_3,6.60E-10,0.499933893,1.75E-06
 ENSG00000162591.15_2,6.24E-08,0.499933893,0.00011016

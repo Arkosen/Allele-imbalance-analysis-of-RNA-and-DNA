@@ -1,4 +1,4 @@
-# Allele Specific Expression (ASE)
+# Allele imbalance analysis for RNA and DNA sequencing.
 
 # Motivation:
 
@@ -21,6 +21,7 @@ R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running
 ~/Rscript --vanilla rna_allele_imbalance.R allele_count.csv result.csv
 
 # Format of allele_count.csv input file for estimating RNA allele imbalance. Requires a comma seperated file with following columns. Column names MUST be included:
+
 seqnames,start,end,ref,alt,snp_id,gene_id,ref.matches,alt.matches,N,errors,GQ,genotype.error
 1,889188,889188,G,T,1:889188_G/T,ENSG00000188976.10_2,88,0,88,0,69,1.26E-07
 1,976242,976242,C,A,1:976242_C/A,ENSG00000188157.14_4,15,0,15,0,25,0.003162278

@@ -140,7 +140,9 @@ fun = function(i){
 
 my.list=llply(1:length(reg), fun, .progress = progress_text(char="+"))
 
+# combine list
 res= rbindlist(my.list) %>% as.data.frame()
 
+# output results
 write.csv(res , filename.output, row.names = F)
 

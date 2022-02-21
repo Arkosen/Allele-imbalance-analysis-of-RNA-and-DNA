@@ -19,9 +19,18 @@ To estimate ASE in these samples, we implemented a statistical model that utiliz
 R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running under: CentOS Linux 7 (Core), Dependencies : rmutil_1.1.5, dplyr_1.0.7, plyr_1.8.6, data.table_1.14.2
 
 # Linux
-~/Rscript --vanilla rna_allele_imbalance_dyno.R allele_count.csv result.csv
+~/Rscript --vanilla rna_allele_imbalance.R allele_count.csv result.csv
 
-# Format of allele_count.csv file for estimating RNA allele imbalance:
+# Format of allele_count.csv input file for estimating RNA allele imbalance. Requires a comma seperated file with following columns. Column names MUST be included:
+seqnames,start,end,ref,alt,snp_id,gene_id,ref.matches,alt.matches,N,errors,GQ,genotype.error
+1,889188,889188,G,T,1:889188_G/T,ENSG00000188976.10_2,88,0,88,0,69,1.26E-07
+1,976242,976242,C,A,1:976242_C/A,ENSG00000188157.14_4,15,0,15,0,25,0.003162278
+1,983546,983546,G,T,1:983546_G/T,ENSG00000188157.14_4,51,0,51,0,69,1.26E-07
+
+
+
+
+
 
 
 

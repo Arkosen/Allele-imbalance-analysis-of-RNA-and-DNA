@@ -4,7 +4,7 @@ filename.region= args[2]
 filename.output= args[3]
 print(args)
 
-# required libraries
+# load libraries
 suppressMessages(library(data.table))
 suppressMessages(library(plyr))
 suppressMessages(library(dplyr))
@@ -23,7 +23,7 @@ colnames(cnt) = col.names
 
 cnt$N= rowSums(cnt[, c("ref.matches", "alt.matches")])
 
-# filter normals
+# filter counts
 cnt = subset(cnt, N >= 10)
 
 # add end position and name
@@ -138,11 +138,7 @@ fun = function(i){
   res
 }
 
-
-# my.list=llply(1:length(reg), fun, .progress = progress_text(char="+"))
-# 
-# run in parallel
-cl= 
+my.list=llply(1:length(reg), fun, .progress = progress_text(char="+"))
 
 res= rbindlist(my.list) %>% as.data.frame()
 

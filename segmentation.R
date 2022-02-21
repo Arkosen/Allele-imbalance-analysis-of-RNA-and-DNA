@@ -4,6 +4,7 @@ filename.normal= args[2]
 filename.output1= args[3]
 filename.output2= args[4]
 
+# load libraries
 suppressMessages(library(data.table))
 suppressMessages(library(plyr))
 suppressMessages(library(dplyr))
@@ -58,7 +59,7 @@ my.seg.fun= function(i){
 
 my.list= llply(1:length(chr), my.seg.fun, .progress = progress_text(char="+"))
 
-# combine chr
+# combine list
 seg= rbindlist(my.list) %>% as.data.frame()
 
 # output results

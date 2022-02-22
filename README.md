@@ -1,6 +1,6 @@
 # Allele specific expression analysis.
 
-# Motivation:
+# Motivation
 
 ASE quantifies the difference in expression of two alleles of a gene and can be measured using RNA-seq reads that align to heterozygous sites. Compared to standard differential gene expression analysis, ASE is insensitive to environmental or trans-acting factors, which generally affect both alleles equally. This makes ASE a powerful tool for revealing genes that are affected by cis-acting mutations, including noncoding regulatory mutations that affect sequences such as promoters, enhancers, and insulators as well as protein-coding or splicing mutations that result in nonsense-mediated decay. Another advantage of ASE is that it is detectable even when the identity of the pathogenic variants causing dysregulation are unknown and it can reveal the effects of rare germline or somatic mutation. Thus, ASE is a powerful tool for the identification of genes with altered gene dosage due to cis-acting genome alterations.
 

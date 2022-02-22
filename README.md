@@ -41,15 +41,13 @@ R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running
 
 ~/Rscript --vanilla ~/dna_allele_imbalance.R dna_allele_count_normal.tsv dna_test_regions.bed normal.csv
 
-Run dna_allele_imbalance.R script seperately for tumor and normal DNA-seq data. Example of dna_allele_count_tumor.tsv, dna_allele_count_normal.tsv, dna_test_region.bed, tumor.csv and normal.csv are provided in this Github. With the results file (tumor.csv and normal.csv) run the segmentation.R to perform circular binary segmentation (CBS).
+The dna_allele_count_tumor.tsv and dna_allele_count_normal.tsv is generated using CollectAllelicCounts from GATK (4.1.1) (https://gatk.broadinstitute.org/hc/en-us/articles/360037594071-CollectAllelicCounts). Run dna_allele_imbalance.R script seperately for tumor and normal DNA-seq data. Then with the results file (tumor.csv and normal.csv) run the segmentation.R to perform circular binary segmentation (CBS).
 
 # For running segmentation.R:
 
 R version 4.1.2 (2021-11-01), Platform: x86_64-conda-linux-gnu (64-bit), Running under: CentOS Linux 7 (Core), Dependencies : rmutil_1.1.5, dplyr_1.0.7, plyr_1.8.6, data.table_1.14.2, DNAcopy_1.64.0
 
 ~/Rscript --vanilla ~/segmentation.R tumor.csv normal.csv segmented.csv
-
-Example of the expected output is provided in the Github.
 
 # Extras
 

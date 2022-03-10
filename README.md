@@ -31,7 +31,7 @@ We estimate allele imbalance for tumor (a_tumor) and normal (a_normal) using met
 
 δ_a=|a_tumor|-|a_normal|
 
-Finally, to create contiguous segments of allelic imbalance, we performed Circular Binary Segmentation (CBS) on δ_a. For detailed description of the method refer to Sen et al, 2022, Genome Biology (DOI:pending) 
+Finally, to create contiguous segments of allelic imbalance, we performed Circular Binary Segmentation (CBS) on δ_a. For detailed description of the method refer to Sen et al, 2022, Genome Biology (DOI:https://doi.org/10.1186/s13059-022-02640-y) 
 
 # For running dna_allele_imbalance.R:
 
